@@ -1,0 +1,57 @@
+{% extends "base.html.twig" %}
+
+{% block header %}
+    <header>
+        <nav>
+            <ul class="w-50">
+                <li class="w-50">
+                    <a href="{{ path('home') }}">Accueil</a>
+                </li>
+                <li class="w-50">
+                    <a href="">Réserver</a>
+                </li>
+            </ul>
+            <ul class="w-50">
+                <li class="w-50">
+                    <a href="{{ path('contact_new') }}">Contact</a>
+                </li>
+                <li class="w-50">
+                    <a href="{{ path('who') }}">Qui suis-je ?</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+{% endblock %}
+
+{% block main %}
+    <section class="who">
+        <h2>Qui suis-je ? (Admin)</h2>
+
+        <article>
+            {% for whos in who %}
+                    <div class="edit-who">
+                        <a href="{{ path('who_edit', {'id' : whos.id}) }}">Modifier</a>
+                    </div>
+
+                <div>
+                    <img src="{{ whos.imgUrl }}" alt="">
+                </div>
+
+                <p class="para-1">{{ whos.description }}</p>
+                
+                <nav>
+                    <ul>
+                        {% for socialLink in socialLinks %}
+                            <li>
+                                <a href="{{ socialLink.link }}" target="_blank">{{ socialLink.name }}</a>
+                                <div class="edit-who">
+                                    <a href="{{ path('socialLinks_edit', {'id' : socialLink.id}) }}">Modifier</a>
+                                </div>
+                            </li>    
+                        {% endfor %}
+                    </ul>
+                </nav>
+            {% endfor %}
+        </article>
+    </section>
+{% endblock %}

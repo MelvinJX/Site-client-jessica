@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+
+{% block main %}
+    <h2>Modifier les réseaux sociaux</h2>
+
+    <section>
+        {{ form_start(socialLinksForm) }}
+            {{ form_widget(socialLinksForm.name) }}
+            {{ form_widget(socialLinksForm.link) }}
+            {{ form_widget(socialLinksForm.submit) }}
+        {{ form_end(socialLinksForm) }}
+    </section>
+{% endblock %}

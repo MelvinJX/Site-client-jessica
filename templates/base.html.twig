@@ -6,14 +6,55 @@
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
+            {# {{ encore_entry_link_tags('app') }} #}
+            <link rel="stylesheet" href="{{ asset('assets/css/myStyle.css') }}">
         {% endblock %}
 
-        {% block javascripts %}
+        {# {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
-        {% endblock %}
+        {% endblock %} #}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block header %}
+            <header>
+                <nav>
+                    <ul class="w-33">
+                        <li class="w-50">
+                            <a href="{{ path('home') }}">Accueil</a>
+                        </li>
+                        <li class="w-50">
+                            <a href="{{ path('new_reservation') }}">Réserver</a>
+                        </li>
+                    </ul>
+                    <div class="w-33">
+                        <img src="/images/photo.jpeg" alt="">
+                    </div>
+                    <ul class="w-33">
+                        <li class="w-50">
+                            <a href="{{ path('contact_new') }}">Contact</a>
+                        </li>
+                        <li class="w-50">
+                            <a href="{{ path('who') }}">Qui suis-je ?</a>
+                        </li> 
+                        {% if 1 + 1 == 2 %}
+                            <li class="w-50">
+                                <a href="{{ path('admin') }}">Administration</a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            </header>
+        {% endblock %}
+
+        <main>
+            {% block main %}
+            {% endblock %}
+        </main>
+
+        {% block footer %}
+            <footer>
+                <h1>Footer</h1>
+            </footer>
+        {% endblock %}
     </body>
 </html>

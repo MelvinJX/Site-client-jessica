@@ -1,0 +1,80 @@
+{% extends "base.html.twig" %}
+
+{% block header %}
+    <header>
+        <nav>
+            <ul class="w-50">
+                <li class="w-50">
+                    <a href="{{ path('home') }}">Accueil</a>
+                </li>
+                <li class="w-50">
+                    <a href="">Réserver</a>
+                </li>
+            </ul>
+            <ul class="w-50">
+                <li class="w-50">
+                    <a href="{{ path('contact_new') }}">Contact</a>
+                </li>
+                <li class="w-50">
+                    <a href="{{ path('who') }}">Qui suis-je ?</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+{% endblock %}
+
+{% block main %}
+    <section class="who">
+        <h2>Qui suis-je ?</h2>
+
+        <article>
+            <div>
+                <img src="/images/photo.jpeg" alt="">
+            </div>
+            <p class="para-1">
+                Je me suis réveillée un jour en réalisant que la vie que j’avais ne me rendait pas heureuse.
+                <br>
+                Et ce malgré ma situation professionnelle dans la finance et les perspectives qu’elle pouvait m’offrir.
+                <br>
+                Je me suis demandée alors pourquoi je ne suis pas satisfaite ? j’ai pourtant toujours voulu bien faire, on m’a toujours appris à chercher les meilleures opportunités, à chercher la protection et la sécurité… 
+                <br>
+                En fait là était tout le problème, ce sont ces deux dernières croyances, ancrées depuis le début de mon éducation qui m’ont fait faire des choix sans trop consulter mon avis profond qui lui, a parfois exprimé le contraire mais qui finalement se résigne à écouter « la voix de la raison ».
+
+                <br>
+                <br>
+
+                Mais Pourquoi étais-je tant convaincue qu’absolument tout ce qu’on a pu me dire ou m’apprendre à plus de crédibilité et de valeur que ce que je pense au fond ? Parce que ça répondrait a mes croyances ? Que ça mettrait ma famille à l’abri ? que je serai tranquille ? Que ça correspondait aux bons critères de la société ? Que ça me faisait rentrer dans le moule ?
+                <br>
+                Cette base de pensée erronée, ancrée, rendait tous mes rêves « risqués ».
+                <br>
+                J’ai donc écouté plus attentivement mon « moi intérieur », et considéré que le risque était de ne pas vivre la vie que je voulais.
+                <br>
+                Je me suis répétée que je risquais de ne pas vivre mes rêves si je ne sortais pas de ce schéma, la vie passe trop vite et j’ai osé.
+                <br>
+                J’ai osé écouter totalement mes envies profondes, aussi folles soient-elles. J’ai toujours eu envie de courir un marathon…
+                <br>
+                C’est fait! Et j’y ai pris goût! J’ai toujours voulu être mon propre patron, j’ai donc décidé de tout plaquer, de sortir des sentiers battus pour avoir enfin cette incommensurable satisfaction de faire ce qui me plait! Pour moi c’est ça la vie, prendre des risques, sortir de sa « zone de confort » qui en réalité n’en est pas une.
+                <br>
+                <br>
+                Les années passent trop vite pour se résigner à laisser ses envies au stade de rêve.
+            </p>
+
+            <p class="para-2">
+                Vous pouvez me retouver sur mes réseaux pour en apprendre plus sur moi !
+            </p>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/jessicachievement/?hl=fr" target="_blank">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="">Facebook</a>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+    </section>
+{% endblock %}

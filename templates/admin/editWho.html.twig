@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+
+{% block main %}
+    <h2>Modifier le texte de présentation</h2>
+
+    <section>
+        {{ form_start(whoForm) }}
+            {{ form_widget(whoForm.description) }}
+            {{ form_widget(whoForm.imgUrl) }}
+            {{ form_widget(whoForm.submit) }}
+        {{ form_end(whoForm) }}
+    </section>
+{% endblock %}

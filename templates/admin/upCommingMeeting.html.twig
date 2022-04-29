@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block main %}
+    <section>
+        {% for meeting in meetings %}
+            <article>
+                <p>Avec Mr/Mme {{ meeting.name }} {{ meeting.firstName }}</p>
+                <span>Téléphone {{ meeting.phoneNumber }}</span>
+                <span>{{ meeting.meetDate }}</span>
+                <p>Rendez-vous pour {{ meeting.topic }}</p>
+            </article>
+        {% endfor %}
+    </section
+{% endblock %}

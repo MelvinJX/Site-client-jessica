@@ -1,0 +1,378 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*----------------------*/
+/*----------------------*/
+/*       GENERAL        */
+/*----------------------*/
+/*----------------------*/
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*----------------------*/
+/*       link           */
+/*----------------------*/
+
+.action-link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.action-link a {
+    margin-left: 10px;
+    color: #fff;
+    background-color: blue;
+}
+
+/*----------------------*/
+/*----------------------*/
+/*       STRUCTURE      */
+/*----------------------*/
+/*----------------------*/
+
+/*----------------------*/
+/*       Header         */
+/*----------------------*/
+
+header nav {
+    justify-content: center;
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: space-around;
+}
+
+header nav ul ul {
+    border: 1px solid #707070;
+}
+
+header nav ul li {
+    background-color: #C8A288;
+}
+
+header nav ul li {
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    padding: 20px;
+    text-decoration: none;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+    
+/*----------------------*/
+/*       Articles       */
+/*----------------------*/
+
+.article-box {
+    margin: 40px 20px 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 4px solid red; */
+    box-sizing: border-box;
+}
+
+.all-articles, .one_article {
+    width: 74%;
+    align-content: flex-start;
+}
+
+.all-articles h2 {
+    width: 100%;
+    padding-left: 120px;
+    padding-top: 20px;
+}
+
+.all-articles hr {
+    width: 94%;
+}
+
+.all-articles, .article-box aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid #707070;
+    box-sizing: border-box;
+}
+
+.all-articles article {
+    width: 38%;
+    height: 310px;
+    margin: 44px;
+    align-self: flex-start;
+    border-radius: 4px;
+}
+
+.all-articles article, .article-box aside article {
+    background-color: rgb(238, 238, 238);
+    overflow: hidden;
+    border: 1px solid #707070;
+    box-sizing: border-box;
+    contain: content;
+    position: relative;
+}
+
+.all-articles article h3 {
+    margin: 0;
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid #707070;
+}
+
+.all-articles article .show_article {
+    padding: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    bottom: 20px;
+    right: 0;
+}
+
+.all-articles article  .show_article, .article-box aside article .show_article {
+    color: #fff;
+    border: 1px solid #707070;
+    border-right: none;
+    border-radius: 30px 0 0 20px;
+    background-color: #D5C3B9;
+    position: absolute;
+}
+
+.article-box aside {
+    width: 21%;
+    height: 800px;
+    overflow: scroll;
+    box-sizing: border-box;
+    /* border: 4px solid rgb(30, 255, 0); */
+}
+
+.article-box aside h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.article-box aside hr {
+    width: 100%;
+}
+
+.article-box aside article {
+    width: 78%;
+    height: 190px;
+    margin: 30px 0 30px 0;
+    align-self: flex-start;
+    border-radius: 4px;
+}
+
+.article-box aside article h5 {
+    text-align: center;
+}
+
+.article-box aside article .show_article {
+    padding: 4px;
+    padding-right: 20px;
+    padding-left: 20px;
+    bottom: 20px;
+    right: 0;
+    font-size: 12px;
+}
+
+.one_article {
+    border: 1px solid #707070;
+    padding: 20px;
+}
+
+.one_article .article-header {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid #707070;
+}
+
+.one_article .article-header .show_article {
+    margin-right: 30px;
+}
+
+.one_article article div:nth-child(0n+2) {
+    width: 100%;
+    height: 200px;
+    margin: 40px 0 40px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.testu li:nth-child(2n) {
+    background-color: green;
+}
+
+/*----------------------*/
+/*         Who          */
+/*----------------------*/
+
+.who {
+    margin: 40px 0 40px 0;
+}
+
+.who h2 {
+    text-align: center;
+}
+
+.who article {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #000;
+}
+
+.who article div:nth-child(0n+2) {
+    width: 30%;
+}
+
+.who article .para-1 {
+    width: 68%;
+}
+
+.who article .para-2 {
+    width: 100%;
+    text-align: right;
+}
+
+.who article nav {
+    margin-left: auto;
+}
+
+.who article nav ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding: 0;
+}
+
+.who article nav ul li {
+    margin-right: 10px;
+}
+
+/*----------------------*/
+/*       Footer         */
+/*----------------------*/
+
+footer {
+    background-color: #996F54;
+    padding: 40px;
+    color: rgb(255, 255, 255);
+}
+
+/*----------------------*/
+/*       Test           */
+/*----------------------*/
+
+/* header nav ul {
+    background-color: rgb(65, 214, 28);
+}
+
+header nav ul ul {
+    background-color:rgb(3, 34, 206) ;
+}
+
+header nav ul ul li {
+    background-color: rgb(207, 137, 7);
+} */
+
+/*----------------------*/
+/*       Class          */
+/*----------------------*/
+
+.flex {
+    display: flex;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-33 {
+    width: 33%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.border-left {
+    border-left: 1px solid #707070;
+}
+
+.border-right {
+    border-right: 1px solid #707070;
+}
+
+.test {
+    background-color: rgb(233, 233, 233);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+/*----------------------*/
+/*----------------------*/
+/*         Admin        */
+/*----------------------*/
+/*----------------------*/
+
+.admin-page h2 {
+    text-align: center;
+}
+
+.admin-page nav {
+    display: flex;
+    justify-content: center;
+}
+
+.admin-page nav ul {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.admin-page nav ul li {
+    padding: 0;
+    width: 33%;
+    margin: 10px;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+.admin-page nav ul li a {
+    padding: 20px;
+    color: #fff;
+    background-color: #C8A288;
+    border-radius: 6px;
+    display: block;
+}
+
+/*----------------------*/
+/*     Admin Who        */
+/*----------------------*/
+
+.who .edit-who {
+    width: 100%;
+    text-align: right;
+}

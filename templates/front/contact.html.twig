@@ -1,0 +1,18 @@
+{% extends "base.html.twig" %}
+
+{% block main %}
+    <h2>Laissez-moi un message !</h2>
+
+    {{ form_start(contactForm) }}
+        {{ form_widget(contactForm.name) }}
+        {{ form_widget(contactForm.email) }}
+        {{ form_widget(contactForm.phone_number) }}
+        {{ form_widget(contactForm.message) }}
+        {{ form_widget(contactForm.caseRgpd) }}
+        {{ form_label(contactForm.caseRgpd, 
+            'En cochant cette case, j\'accepte que les informations renseigner dans ce formulaire soient recueillies 
+            et utilisées par la société afin que je puisse être contacter. '
+        ) }}
+        {{ form_widget(contactForm.submit) }}
+    {{ form_end(contactForm) }}
+{% endblock %}

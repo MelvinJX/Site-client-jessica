@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+
+{% block main %}
+    <div class="admin-page">
+        <h2>Bonjour Admin, que souhaitez-vous faire aujourd'hui ?</h2>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="{{ path('admin_article_new') }}">Ajouter un article</a>
+                </li>
+                <li>
+                    <a href="{{ path('admin_home') }}">Voir tous les articles</a>
+                </li>
+                <li>
+                    <a href="">Définir disponibilités</a>
+                </li>
+                
+                <li>
+                    <a href="{{ path('admin_who') }}">Texte de présentation</a>
+                </li>
+                <li>
+                    <a href="{{ path('admin_upCommingMeeting') }}">Mes rendez-vous à venir</a>
+                </li>
+                <li>
+                    <a href="">Agenda</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+{% endblock %}

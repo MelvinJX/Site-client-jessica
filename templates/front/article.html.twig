@@ -1,0 +1,36 @@
+{% extends "base.html.twig" %}
+
+{% block main %}
+    <div class="article-box">
+        <section class="one_article">
+            <article>
+                <div class="article-header">
+                    <a href="{{ path('home') }}"><--</a>
+                    <h3>{{ article.title }}</h3>
+                </div>
+                <div>
+                    <img src="/images/photo.jpeg" alt="">
+                </div>
+                <p>{{ article.description }}</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Article récents</h2>
+
+            <hr>
+
+            {% for article in articles %}
+                <article>
+                    <h5>{{ article.title }}</h5>
+
+                    <div>
+                        <img src="/images/photo.jpeg" alt="">
+                    </div>
+
+                    <a href="{{ path('article_show', {'id' : article.id}) }}">Voir l'article</a>
+                </article>
+            {% endfor %}
+        </aside>
+    </div>
+{% endblock %}

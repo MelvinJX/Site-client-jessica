@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+
+{% block main %}
+    {{ form_start(reservationForm) }}
+        {{ form_widget(reservationForm.firstName) }}
+        {{ form_widget(reservationForm.name) }}
+        {{ form_widget(reservationForm.meetDate) }}
+        {{ form_widget(reservationForm.phoneNumber) }}
+        {{ form_widget(reservationForm.topic) }}
+        {{ form_widget(reservationForm.submit) }}
+    {{ form_end(reservationForm) }}
+{% endblock %}

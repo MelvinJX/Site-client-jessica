@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block main %}
+    <h2>Modifier l'article</h2>
+
+    <section>
+        {{ form_start(articleForm) }}
+            {{ form_widget(articleForm.title) }}
+            {{ form_widget(articleForm.description) }}
+            {{ form_widget(articleForm.imgUrl) }}
+            {{ form_widget(articleForm.submit) }}
+        {{ form_end(articleForm) }}
+    </section>
+{% endblock %}
